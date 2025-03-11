@@ -1,7 +1,10 @@
-# 🏢 Employee Management System (SQL)
+# Employee Management System (Oracle SQL*Plus)
 
-## 🚀 Overview
-This is a simple **Employee Management System** using **SQL**.  
-It includes an **Employees table**, **Departments table**, and **sample queries**.
+## 📌 Project Description
+This project is an **Employee Management System** built using **Oracle SQL*Plus**. It includes:
+- **Departments and Employees Tables**
+- **Auto-increment using Sequences & Triggers**
+- **Sample Data for Employees**
+- **Useful Queries for Employee Analysis**
 
 
