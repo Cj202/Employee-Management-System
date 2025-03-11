@@ -1,9 +1,7 @@
-USE EmployeeDB;
-
 -- Get all employees
 SELECT * FROM Employees;
 
--- Find employees in the IT Department
+-- Get employees in a specific department (e.g., IT)
 SELECT Name, Email, Salary
 FROM Employees
 JOIN Departments ON Employees.DeptID = Departments.DeptID
@@ -14,3 +12,6 @@ SELECT Departments.DeptName, SUM(Employees.Salary) AS TotalSalary
 FROM Employees
 JOIN Departments ON Employees.DeptID = Departments.DeptID
 GROUP BY Departments.DeptName;
+
+-- Get the highest-paid employee
+SELECT Name, Salary FROM Employees WHERE Salary = (SELECT MAX(Salary) FROM Employees);
